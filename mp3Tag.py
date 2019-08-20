@@ -8,9 +8,15 @@
 import glob, os, pprint
 from mutagen.easyid3 import EasyID3, ID3
 from mutagen.mp3 import MP3
+from tkinter import *
 
-
+def gui():
+    root = Tk()
+    theLabel = Label(root, text = "This is easy")
+    theLabel.pack()
+    root.mainloop()
 def main():
+    gui()
     directoryName = input("Please input the directory: ")
     #os.chdir(C:\Users\ryukasun\Music\Lindy Music\Brooks Prumo Orchestra)
     #for file in glob.glob("*.mp3"):
@@ -53,6 +59,7 @@ def main():
     
     #for name in musicNames:
     #    audio = ID3(name)
+    
         
                
                 
